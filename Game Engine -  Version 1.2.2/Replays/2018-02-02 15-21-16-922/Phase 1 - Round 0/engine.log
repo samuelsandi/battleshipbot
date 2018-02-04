@@ -1,0 +1,17 @@
+
+02-02-2018 15:21:16:922 - I: 	Registered player Player 1
+02-02-2018 15:21:16:922 - I: 	Registered player Player 2
+02-02-2018 15:21:16:969 - I: 		OK!
+02-02-2018 15:22:15:333 - I: 	Added Command PlaceShipCommand for Player Player 1
+02-02-2018 15:23:02:546 - I: 	Added Command PlaceShipCommand for Player Player 2
+02-02-2018 15:23:02:546 - D: 	Beginning round processing
+02-02-2018 15:23:02:562 - D: 	Processing Player Commands
+02-02-2018 15:23:02:624 - E: 	Failed to process command PlaceShipCommand for player Player 2GameEngine.Exceptions.InvalidCommandException: There was a problem during the placement of player's Player 2 ships, the round will be played over ---> System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Domain.Ships.Ship.CanPlace(Point point, Direction direction, PlayerMap playerMap) in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\Domain\Ships\Ship.cs:line 91
+   at Domain.Maps.PlayerMap.CanPlace(Ship ship, Point point, Direction direction) in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\Domain\Maps\PlayerMap.cs:line 71
+   at Domain.Games.GameMap.CanPlace(PlayerType playerType, ShipType shipType, Point coordinate, Direction direction) in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\Domain\Games\GameMap.cs:line 127
+   at GameEngine.Commands.PlayerCommands.PlaceShipCommand.PerformCommand(GameMap gameMap, BattleshipPlayer player) in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\GameEngine\Commands\PlayerCommands\PlaceShipCommand.cs:line 46
+   --- End of inner exception stack trace ---
+   at GameEngine.Commands.PlayerCommands.PlaceShipCommand.PerformCommand(GameMap gameMap, BattleshipPlayer player) in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\GameEngine\Commands\PlayerCommands\PlaceShipCommand.cs:line 58
+   at GameEngine.Engine.GameRoundProcessor.ProcessPlayerCommands() in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\GameEngine\Engine\GameRoundProcessor.cs:line 213

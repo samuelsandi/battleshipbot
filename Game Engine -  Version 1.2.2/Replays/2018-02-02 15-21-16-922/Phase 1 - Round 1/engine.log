@@ -1,0 +1,7 @@
+
+02-02-2018 15:24:12:132 - I: 	Added Command PlaceShipCommand for Player Player 1
+02-02-2018 15:24:21:693 - I: 	Added Command PlaceShipCommand for Player Player 2
+02-02-2018 15:24:21:693 - D: 	Beginning round processing
+02-02-2018 15:24:21:693 - D: 	Processing Player Commands
+02-02-2018 15:24:21:693 - D: 	Killing off players who have no ships left
+02-02-2018 15:24:21:693 - D: 	Round processing complete
