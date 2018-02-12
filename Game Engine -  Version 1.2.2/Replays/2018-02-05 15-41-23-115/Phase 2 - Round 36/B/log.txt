@@ -1,0 +1,12 @@
+
+05-02-2018 15:42:03:630 - D: 	Executing bot with following commands python.exe "bot.py" B "D:\File Kerja\Tubes Stima 1\Game Engine -  Version 1.2.2\Replays\2018-02-05 15-41-23-115\Phase 2 - Round 36\B"
+05-02-2018 15:42:03:630 - I: 	Executing process python.exe "bot.py" B "D:\File Kerja\Tubes Stima 1\Game Engine -  Version 1.2.2\Replays\2018-02-05 15-41-23-115\Phase 2 - Round 36\B"
+05-02-2018 15:42:03:661 - I: 	Bot has 4000ms to run before it will be forcefully killed
+05-02-2018 15:42:07:672 - I: 	Bot has been killed for taking to long to execute
+05-02-2018 15:42:07:672 - E: 	Output from bot: 
+05-02-2018 15:42:07:672 - I: 	Output from bot: 
+05-02-2018 15:42:07:672 - I: 	Your bots total execution time was 00:00:04.0306769
+05-02-2018 15:42:07:672 - I: 	Your bot exceeded the maximum execution time
+05-02-2018 15:42:07:672 - E: 	Bot time limit exceeded BotRunner.Exceptions.TimeLimitExceededException: Time limit exceeded by 00:00:01.8661457
+   at TestHarness.TestHarnesses.Bot.BotRunner.RunBot() in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\BotRunner\Harness\Bot\BotRunner.cs:line 103
+   at TestHarness.TestHarnesses.Bot.BotHarness.RunBotAndGetNextMove() in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\BotRunner\Harness\Bot\BotHarness.cs:line 151

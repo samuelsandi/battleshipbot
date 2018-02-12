@@ -1,0 +1,9 @@
+
+05-02-2018 15:41:27:739 - I: 	Executing process python.exe "" B "D:\File Kerja\Tubes Stima 1\Game Engine -  Version 1.2.2\Replays\2018-02-05 15-41-23-115\Phase 1 - Round 0\B"
+05-02-2018 15:41:27:903 - I: 	Bot calibration complete and can run an additional 164ms due to environment startup
+05-02-2018 15:41:27:903 - D: 	Executing bot with following commands python.exe "bot.py" B "D:\File Kerja\Tubes Stima 1\Game Engine -  Version 1.2.2\Replays\2018-02-05 15-41-23-115\Phase 1 - Round 0\B"
+05-02-2018 15:41:27:903 - I: 	Executing process python.exe "bot.py" B "D:\File Kerja\Tubes Stima 1\Game Engine -  Version 1.2.2\Replays\2018-02-05 15-41-23-115\Phase 1 - Round 0\B"
+05-02-2018 15:41:27:919 - I: 	Bot has 4000ms to run before it will be forcefully killed
+05-02-2018 15:41:28:107 - E: 	Output from bot: 
+05-02-2018 15:41:28:107 - I: 	Output from bot: 
+05-02-2018 15:41:28:107 - I: 	Your bots total execution time was 00:00:00.1923373
