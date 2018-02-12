@@ -1,7 +1,0 @@
-
-10-02-2018 20:47:33:370 - I: 	Added Command DoNothingCommand for Player py3Bot
-10-02-2018 20:47:33:539 - I: 	Added Command DoNothingCommand for Player py3Bot
-10-02-2018 20:47:33:540 - D: 	Beginning round processing
-10-02-2018 20:47:33:540 - D: 	Processing Player Commands
-10-02-2018 20:47:33:540 - E: 	Failed to process command DoNothingCommand for player py3BotGameEngine.Exceptions.InvalidCommandException: There was a problem during the placement of player's py3Bot ships (DoNothing), the round will be played over
-  at GameEngine.Engine.GameRoundProcessor.ProcessPlayerCommands () [0x00217] in <e37aa81d749148eb9249f33efb08046a>:0 
