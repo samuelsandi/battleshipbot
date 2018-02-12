@@ -9,6 +9,24 @@ game_state_file = "state.json"
 output_path = '.'
 map_size = 0
 
+#--------GREEDY---------#
+
+def greedy1(targets,opponent_map):
+    for (x,y) in targets:
+        if (x+y) % 2 == 0: #parity
+            return x,y
+        else: #find cell that is near Damaged cell
+            for cell in opponent_map:
+                x_a = cell['X']
+                y_a = cell['Y']
+                if (((x_a == x - 1) or (x_a == x + 1)) and (y_a == y)) or (((y_a == y + 1) or (y_a == y - 1)) and (x_a == x)):
+                    if cell['Damaged']:
+                        return x,y
+    #kalau ngga ada ya udah, pake random
+    return choice(targets)
+    
+#--------GREEDY---------#
+
 
 def main(player_key):
     global map_size
@@ -29,7 +47,6 @@ def output_shot(x, y):
         f_out.write('\n')
     pass
 
-
 def fire_shot(opponent_map):
     # To send through a command please pass through the following <code>,<x>,<y>
     # Possible codes: 1 - Fireshot, 0 - Do Nothing (please pass through coordinates if
@@ -39,7 +56,7 @@ def fire_shot(opponent_map):
         if not cell['Damaged'] and not cell['Missed']:
             valid_cell = cell['X'], cell['Y']
             targets.append(valid_cell)
-    target = choice(targets)
+    target = greedy1(targets,opponent_map)
     output_shot(*target)
     return
 
@@ -49,12 +66,13 @@ def place_ships():
     # Ship names: Battleship, Cruiser, Carrier, Destroyer, Submarine
     # Directions: north east south west
 
-    ships = ['Battleship 1 0 north',
-             'Carrier 3 1 East',
-             'Cruiser 4 2 north',
-             'Destroyer 7 3 north',
-             'Submarine 1 8 East'
-             ]
+    ships =[
+        'Battleship 1 0 north',
+        'Carrier 3 1 East',
+        'Cruiser 4 2 north',
+        'Destroyer 7 3 north',
+        'Submarine 1 8 East'
+    ]
 
     with open(os.path.join(output_path, place_ship_file), 'w') as f_out:
         for ship in ships:
